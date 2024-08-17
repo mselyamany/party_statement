@@ -1,0 +1,47 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"VDxu5UcrdB\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Party Statement</span>\",\"col\":12}},{\"id\":\"tGgVsT6xyg\",\"type\":\"card\",\"data\":{\"card_name\":\"Transactions\",\"col\":4}}]",
+ "creation": "2023-11-29 22:10:36.494453",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "table_2",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Party Statement",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Transactions",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Party Statement Of Account",
+   "link_count": 0,
+   "link_to": "Party Statement Of Account",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-11-29 22:13:08.410600",
+ "modified_by": "Administrator",
+ "module": "Party Statement",
+ "name": "Party Statement",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "Accounting",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 23.0,
+ "shortcuts": [],
+ "title": "Party Statement"
+}

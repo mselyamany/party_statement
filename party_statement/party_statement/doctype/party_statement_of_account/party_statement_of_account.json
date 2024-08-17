@@ -1,0 +1,234 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-02-08 12:20:47.108841",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "posting_date",
+  "column_break_3",
+  "company",
+  "soa_settings_section",
+  "party_type",
+  "party",
+  "party_name",
+  "column_break_8",
+  "date_from",
+  "date_to",
+  "party_group_name",
+  "section_break_11",
+  "get_statement",
+  "details",
+  "summary_section",
+  "party_balance_in_party_currency",
+  "party_account_currency",
+  "last_payment_date",
+  "column_break_15",
+  "balance_in_base_currency",
+  "last_payment_number",
+  "last_payment_amount",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "PSOA-.#####"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "soa_settings_section",
+   "fieldtype": "Section Break",
+   "label": "PSOA Settings"
+  },
+  {
+   "fieldname": "party_type",
+   "fieldtype": "Link",
+   "label": "Party Type",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Dynamic Link",
+   "label": "Party",
+   "options": "party_type"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_from",
+   "fieldtype": "Date",
+   "label": "Date From"
+  },
+  {
+   "fieldname": "date_to",
+   "fieldtype": "Date",
+   "label": "Date To"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "summary_section",
+   "fieldtype": "Section Break",
+   "label": "Summary"
+  },
+  {
+   "bold": 1,
+   "fieldname": "last_payment_date",
+   "fieldtype": "Date",
+   "label": "Last Payment Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "balance_in_base_currency",
+   "fieldtype": "Currency",
+   "label": "Balance in Base Currency",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "last_payment_number",
+   "fieldtype": "Link",
+   "label": "Last Payment Number",
+   "options": "Payment Entry",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "last_payment_amount",
+   "fieldtype": "Currency",
+   "label": "Last Payment Amount",
+   "options": "party_account_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Table",
+   "label": "PSOA Details",
+   "options": "Party Statement Of Account Detail"
+  },
+  {
+   "bold": 1,
+   "depends_on": "eval: doc.docstatus == 0",
+   "fieldname": "get_statement",
+   "fieldtype": "Button",
+   "label": "Get Statement"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Party Statement Of Account",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "party_balance_in_party_currency",
+   "fieldtype": "Currency",
+   "label": "Party Balance in Party Currency",
+   "options": "party_account_currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "party_account_currency",
+   "fieldtype": "Link",
+   "label": "Party Account Currecny",
+   "options": "Currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "party_name",
+   "fieldtype": "Data",
+   "label": "Party Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "party_group_name",
+   "fieldtype": "Data",
+   "label": "Party Group Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-02-25 20:29:44.326256",
+ "modified_by": "Administrator",
+ "module": "Party Statement",
+ "name": "Party Statement Of Account",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include party_statement *.css
+recursive-include party_statement *.csv
+recursive-include party_statement *.html
+recursive-include party_statement *.ico
+recursive-include party_statement *.js
+recursive-include party_statement *.json
+recursive-include party_statement *.md
+recursive-include party_statement *.png
+recursive-include party_statement *.py
+recursive-include party_statement *.svg
+recursive-include party_statement *.txt
+recursive-exclude party_statement *.pyc
